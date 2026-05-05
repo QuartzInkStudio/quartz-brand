@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bg" cx="72%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#5a3aa0" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#2a1a55" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="diamond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8d4ff"/>
+      <stop offset="50%" stop-color="#c8a0e8"/>
+      <stop offset="100%" stop-color="#5a3aa0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#000000"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g transform="translate(900, 200)" opacity="0.85">
+    <polygon points="0,-90 78,-30 48,90 -48,90 -78,-30" fill="url(#diamond)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="-78" y1="-30" x2="78" y2="-30" stroke="#ffffff" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="0" y1="-90" x2="-48" y2="90" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="0" y1="-90" x2="48" y2="90" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2"/>
+  </g>
+
+  <g transform="translate(80, 110)">
+    <text font-family="'JetBrains Mono', 'Courier New', monospace" font-size="20" fill="#c8a0e8" letter-spacing="4">QUARTZ</text>
+  </g>
+
+  <g transform="translate(80, 270)">
+    <text font-family="'Instrument Serif', 'Georgia', serif" font-size="92" fill="#f0ede8" font-weight="400">Thoughtful</text>
+    <text y="105" font-family="'Instrument Serif', 'Georgia', serif" font-size="92" fill="#f0ede8" font-weight="400" font-style="italic">tools for Mac.</text>
+  </g>
+
+  <g transform="translate(80, 510)">
+    <text font-family="'Inter', 'Helvetica', sans-serif" font-size="24" fill="#a09b95" font-weight="300">Independent Mac studio · Tuck · Facet</text>
+  </g>
+
+  <g transform="translate(80, 570)">
+    <text font-family="'JetBrains Mono', 'Courier New', monospace" font-size="16" fill="#6b6660" letter-spacing="2">QUARTZ.INK</text>
+  </g>
+</svg>
