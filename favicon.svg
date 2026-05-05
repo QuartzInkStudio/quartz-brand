@@ -6,24 +6,24 @@
     </linearGradient>
   </defs>
 
-  <!-- Squircle container (true Apple-style superellipse, 192x192 centered) -->
+  <!-- Squircle container fills the entire viewBox (256x256, no padding) -->
   <path d="
-    M 128 32
-    C 184 32, 224 72, 224 128
-    C 224 184, 184 224, 128 224
-    C 72 224, 32 184, 32 128
-    C 32 72, 72 32, 128 32
+    M 128 0
+    C 202 0, 256 54, 256 128
+    C 256 202, 202 256, 128 256
+    C 54 256, 0 202, 0 128
+    C 0 54, 54 0, 128 0
     Z" fill="url(#bg)"/>
 
-  <!-- Q glyph: hexagonal bowl + diagonal tail -->
+  <!-- Q glyph: hexagonal bowl + diagonal tail (scaled up to match new container) -->
   <g transform="translate(128 128)">
     <!-- bowl (hex ring with even-odd fill rule) -->
     <path d="
-      M 0 -58 L 50 -29 L 50 29 L 0 58 L -50 29 L -50 -29 Z
-      M 0 -32 L -28 -16 L -28 16 L 0 32 L 28 16 L 28 -16 Z"
+      M 0 -77 L 67 -38 L 67 38 L 0 77 L -67 38 L -67 -38 Z
+      M 0 -42 L -37 -21 L -37 21 L 0 42 L 37 21 L 37 -21 Z"
       fill="#f4ecff" fill-rule="evenodd"/>
 
-    <!-- diagonal tail -->
-    <polygon points="20,30 56,56 70,42 30,16" fill="#f4ecff"/>
+    <!-- diagonal tail (proportionally scaled) -->
+    <polygon points="27,40 75,75 93,56 40,21" fill="#f4ecff"/>
   </g>
 </svg>

@@ -6,16 +6,16 @@
     </linearGradient>
   </defs>
 
-  <!-- Circular container (perfect circle, fills the canvas with safe margin) -->
-  <circle cx="128" cy="128" r="116" fill="url(#bg-c)"/>
+  <!-- Circle container fills the entire viewBox -->
+  <circle cx="128" cy="128" r="128" fill="url(#bg-c)"/>
 
-  <!-- Q glyph: identical to the squircle version -->
+  <!-- Q glyph: same scale as squircle version -->
   <g transform="translate(128 128)">
     <path d="
-      M 0 -58 L 50 -29 L 50 29 L 0 58 L -50 29 L -50 -29 Z
-      M 0 -32 L -28 -16 L -28 16 L 0 32 L 28 16 L 28 -16 Z"
+      M 0 -77 L 67 -38 L 67 38 L 0 77 L -67 38 L -67 -38 Z
+      M 0 -42 L -37 -21 L -37 21 L 0 42 L 37 21 L 37 -21 Z"
       fill="#f4ecff" fill-rule="evenodd"/>
 
-    <polygon points="20,30 56,56 70,42 30,16" fill="#f4ecff"/>
+    <polygon points="27,40 75,75 93,56 40,21" fill="#f4ecff"/>
   </g>
 </svg>
