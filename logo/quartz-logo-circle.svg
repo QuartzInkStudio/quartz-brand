@@ -1,29 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="bg-c" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#7a4cc7"/>
       <stop offset="100%" stop-color="#3a1f78"/>
     </linearGradient>
   </defs>
 
-  <!-- Squircle container (true Apple-style superellipse, 192x192 centered) -->
-  <path d="
-    M 128 32
-    C 184 32, 224 72, 224 128
-    C 224 184, 184 224, 128 224
-    C 72 224, 32 184, 32 128
-    C 32 72, 72 32, 128 32
-    Z" fill="url(#bg)"/>
+  <!-- Circular container (perfect circle, fills the canvas with safe margin) -->
+  <circle cx="128" cy="128" r="116" fill="url(#bg-c)"/>
 
-  <!-- Q glyph: hexagonal bowl + diagonal tail -->
+  <!-- Q glyph: identical to the squircle version -->
   <g transform="translate(128 128)">
-    <!-- bowl (hex ring with even-odd fill rule) -->
     <path d="
       M 0 -58 L 50 -29 L 50 29 L 0 58 L -50 29 L -50 -29 Z
       M 0 -32 L -28 -16 L -28 16 L 0 32 L 28 16 L 28 -16 Z"
       fill="#f4ecff" fill-rule="evenodd"/>
 
-    <!-- diagonal tail -->
     <polygon points="20,30 56,56 70,42 30,16" fill="#f4ecff"/>
   </g>
 </svg>

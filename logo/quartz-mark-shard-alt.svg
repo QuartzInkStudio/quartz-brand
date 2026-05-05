@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="r-front" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#f4dfff"/>
+      <stop offset="55%" stop-color="#b785ec"/>
+      <stop offset="100%" stop-color="#7a4cc7"/>
+    </linearGradient>
+    <linearGradient id="r-side" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7a4cc7"/>
+      <stop offset="100%" stop-color="#2e1466"/>
+    </linearGradient>
+    <linearGradient id="r-back" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#5e36a8"/>
+      <stop offset="100%" stop-color="#180a40"/>
+    </linearGradient>
+    <linearGradient id="r-glint" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="256" height="256" fill="#000000"/>
+
+  <!-- Asymmetric crystal shard, refined: 3 main facets + 1 small accent -->
+  <g transform="translate(128 128)">
+    <!-- back/right facet (darkest, largest depth) -->
+    <polygon points="0,-92 56,-8 18,86" fill="url(#r-back)"/>
+
+    <!-- front facet (the main one, lightest) -->
+    <polygon points="0,-92 -52,4 -10,86 18,86" fill="url(#r-front)"/>
+
+    <!-- bottom-front facet (transition tone, gives the shard a base) -->
+    <polygon points="-52,4 -10,86 -38,46" fill="url(#r-side)" opacity="0.92"/>
+
+    <!-- crisp specular highlight on the leading edge -->
+    <polygon points="0,-92 -52,4 -47,4 -2,-90" fill="url(#r-glint)" opacity="0.55"/>
+
+    <!-- facet edges, slightly stronger than v3 so they survive scaling -->
+    <g stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.4" fill="none" stroke-linejoin="round">
+      <line x1="0" y1="-92" x2="-52" y2="4"/>
+      <line x1="0" y1="-92" x2="56" y2="-8"/>
+      <line x1="0" y1="-92" x2="18" y2="86"/>
+      <line x1="-52" y1="4" x2="-10" y2="86"/>
+    </g>
+
+    <!-- silhouette outline for crisp small-size definition -->
+    <polygon points="0,-92 56,-8 18,86 -10,86 -52,4" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.2" stroke-linejoin="round"/>
+  </g>
+</svg>
