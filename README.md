@@ -11,21 +11,39 @@ Quartz is a small, independent studio building thoughtful Mac utilities. Our pro
 | Tuck | [usetuck.com](https://usetuck.com) | Available |
 | Facet | [quartz.ink/facet.html](https://quartz.ink/facet.html) | Coming soon |
 
-## Assets
+## Logo
+
+The Quartz mark is a hexagonal Q monogram &mdash; a faceted ring with a diagonal tail. It comes in two container shapes:
+
+| File | Container | Use |
+|------|-----------|-----|
+| [`logo/quartz-logo-squircle.svg`](logo/quartz-logo-squircle.svg) | Apple-style squircle | App icons, favicons, marketing |
+| [`logo/quartz-logo-circle.svg`](logo/quartz-logo-circle.svg) | Perfect circle | Profile avatars (GitHub, Twitter, LinkedIn) |
+
+PNG renders at common sizes (16, 32, 64, 128, 256, 512, 1024) live in [`logo/png/`](logo/png/).
+
+### Alternate mark (reserved)
+
+| File | Description |
+|------|-------------|
+| [`logo/quartz-mark-shard-alt.svg`](logo/quartz-mark-shard-alt.svg) | Crystal shard mark, kept on file as a future alternate. Not used in active branding. |
+
+## Other assets
 
 | File | Use | Format |
 |------|-----|--------|
-| `favicon.svg` | Browser favicon for quartz.ink and product sites | SVG, 64×64 |
-| `og-image.svg` | Source for the social sharing image | SVG, 1200×630 |
-| `og-image.png` | Open Graph / Twitter card image | PNG, 1200×630 |
+| `favicon.svg` | Site favicon (mirrors `quartz-logo-squircle.svg`) | SVG, 256&times;256 |
+| `og-image.svg` | Source for the social sharing image | SVG, 1200&times;630 |
+| `og-image.png` | Open Graph / Twitter card image | PNG, 1200&times;630 |
 
 ## Colors
 
 | Role | Hex |
 |------|-----|
 | Background | `#000000` |
-| Studio purple (highlight) | `#c8a0e8` |
-| Studio purple (deep) | `#5a3aa0` |
+| Studio purple (highlight) | `#7a4cc7` |
+| Studio purple (deep) | `#3a1f78` |
+| Mark fill (off-white) | `#f4ecff` |
 | Body text | `#f0ede8` |
 
 ## Typography
@@ -42,4 +60,4 @@ For anything else, email [hello@quartz.ink](mailto:hello@quartz.ink).
 
 ---
 
-<sub>© Quartz · All Quartz product names and logos are trademarks of Quartz.</sub>
+<sub>&copy; Quartz &middot; All Quartz product names and logos are trademarks of Quartz.</sub>
